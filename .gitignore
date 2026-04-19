@@ -14,3 +14,6 @@ pyvenv.cfg
 
 # macOS
 .DS_
+
+food-app/share/
+share/
