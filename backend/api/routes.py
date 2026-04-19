@@ -86,17 +86,18 @@ def generate_food_ideas(request: FoodRequest):
 
     for _ in range(2):  # retry once
         # Step 1: extract structured text
-        prompt_b1 = build_extraction_prompt(idea_text)
-        extracted_text = run_local_ai(prompt_b1)
+        # prompt_b1 = build_extraction_prompt(idea_text)
+        # extracted_text = run_local_ai(prompt_b1)
 
-        # Step 2: convert to strict JSON
-        prompt_b2 = build_json_prompt(extracted_text)
-        json_text = run_local_ai(prompt_b2)
+        # # Step 2: convert to strict JSON
+        # prompt_b2 = build_json_prompt(extracted_text)
+        # json_text = run_local_ai(prompt_b2)
 
         # parsed = extract_json(json_text)
+        # json_text = run_local_ai(parsed)
 
-        # prompt_b = build_json_formatter_prompt(idea_text)
-        # json_text = run_local_ai(prompt_b)
+        prompt_b = build_json_formatter_prompt(idea_text)
+        json_text = run_local_ai(prompt_b)
 
         print("\n--- PROMPT B OUTPUT ---\n", json_text)
 
