@@ -1,0 +1,267 @@
+.results-page {
+  max-width: 1000px;
+  margin: 80px auto 0;
+  padding: 0 24px 100px;
+  text-align: center;
+}
+
+.results-page h1 {
+  margin-bottom: -12px;
+}
+
+.results-subtitle {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 55px;
+}
+
+/* Stack of suggestions */
+.suggestions-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+/* One suggestion */
+.suggestion-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.idea-row {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 24px;
+}
+
+.idea-name-box {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.idea-reason-box {
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.hashtag-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.idea-name-box,
+.idea-reason-box,
+.hashtag-box {
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+
+.idea-name-box,
+.idea-reason-box,
+.hashtag-box {
+  background: linear-gradient(
+    90deg,
+    rgba(136, 136, 136, 0.12),
+    rgba(136, 136, 136, 0.04)
+  );
+}
+
+.hashtag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hashtag {
+  font-size: 13px;
+  color: #555;
+  background: #f2f2f2;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.copy-hashtags {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 9px 14px;
+
+  font-size: 11px;
+  font-weight: 500;
+  /* color: #555; */
+
+  cursor: pointer;
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.08); */
+}
+
+.copy-hashtags:hover {
+  background: #f7f7f7;
+}
+
+/* Idea card */
+.idea-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.dish-name {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.dish-reasoning {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Hashtags */
+.hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hashtag {
+  font-size: 13px;
+  color: #555;
+  background: #f2f2f2;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+/* Performance */
+.performance-section {
+  text-align: center;
+}
+
+.performance-title {
+  font-size: 24px;
+  color: #777;
+  margin-bottom: 32px;
+}
+
+.performance-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.stat-card {
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  color: #111;
+}
+
+.stat-label {
+  font-size: 23px;
+  margin-bottom: 32px;
+  display: block;
+}
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.stat-card.likes {
+  background: linear-gradient(
+    180deg,
+    rgba(136, 143, 192, 0.25),
+    rgba(136, 143, 192, 0.05)
+  );
+}
+
+.stat-card.viewers {
+  background: linear-gradient(
+    180deg,
+    rgba(144, 208, 199, 0.25),
+    rgba(144, 208, 199, 0.05)
+  );
+}
+
+.stat-card.followers {
+  background: linear-gradient(
+    180deg,
+    rgba(190, 129, 160, 0.25),
+    rgba(190, 129, 160, 0.05)
+  );
+}
+
+.gray-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(136, 136, 136, 0.12),
+    rgba(136, 136, 136, 0.04)
+  );
+}
+
+.box-icon {
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+  margin-bottom: -12px;
+}
+
+.idea-name-box,
+.idea-reason-box {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 4px;
+}
+
+.copy-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* The popup */
+.copied-toast {
+  position: absolute;
+  top: -32px;
+  right: 0;
+
+  background: #111;
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+
+  opacity: 0.95;
+  animation: fadeInOut 1.5s ease forwards;
+}
+
+/* Smooth fade */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}

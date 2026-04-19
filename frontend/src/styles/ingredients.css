@@ -1,0 +1,58 @@
+/* Page container */
+.ingredients-page {
+  min-height: calc(80vh - 120px); 
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+/* Title */
+.ingredients-page h1 {
+  font-weight: 600;
+  margin-bottom: -12px;
+}
+
+/* Subtitle */
+.ingredients-page p {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 55px;
+}
+
+/* Input */
+.ingredients-input {
+  width: 100%;
+  max-width: 800px;
+  height: 30px;
+
+  padding: 18px 20px;
+  font-size: 20px;
+  font-family: "Pretendard", sans-serif;
+
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  resize: none;
+
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  line-height: 28px;
+}
+
+/* Placeholder */
+.ingredients-input::placeholder {
+  color: #aaa;
+}
+
+.loading-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}

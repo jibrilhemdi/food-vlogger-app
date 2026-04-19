@@ -1,0 +1,149 @@
+.confirm-page {
+  max-width: 1000px;
+  margin: 80px auto 0;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.confirm-page h1 {
+  margin-bottom: -12px;
+}
+
+.confirm-page p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.confirm-page p.confirm-subtitle {
+  font-size: 24px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.confirm-page h3 {
+  font-size: 28px;
+  margin-bottom: -12px;
+}
+
+/* Summary card */
+.confirm-card {
+  display: flex;
+  gap: 54px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 48px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+
+/* Image */
+.confirm-image img {
+  width: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Details */
+.confirm-details {
+  text-align: left;
+}
+
+/* .confirm-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+} */
+
+/* Ingredients */
+.confirm-ingredients .label {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.ingredient-item {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 20px;
+}
+
+/* Actions */
+.confirm-actions {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Base button */
+.confirm-actions button {
+  padding: 24px 32px;
+  border-radius: 10px;
+  min-width: 220px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+/* Secondary */
+.confirm-actions {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Base button reset */
+.confirm-actions button {
+  height: 52px;
+  min-width: 400px;
+
+  padding: 0 40px;
+  border-radius: 10px;
+
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  border: none;
+  background: none;
+
+  transition: all 0.2s ease;
+}
+
+/* Secondary (Make changes) */
+.confirm-actions .secondary {
+  min-width: 300px;
+  background: #ffffff;
+  color: #be81a0;
+  border: 1px solid #f0d6e1;
+}
+
+.confirm-actions .secondary:hover {
+  background: #fdf7fa;
+}
+
+/* Primary (Generate my content) */
+.confirm-actions .primary {
+  min-width: 300px;
+  background: #be81a0;
+  color: #ffffff;
+}
+
+.confirm-actions .primary:hover {
+  opacity: 0.9;
+}
+
+/* Disabled */
+.confirm-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

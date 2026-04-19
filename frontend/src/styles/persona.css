@@ -1,0 +1,136 @@
+/* Global base */
+body {
+  margin: 0;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+    sans-serif;
+  background-color: #eeeeee;
+  color: #111;
+}
+
+/* Header container */
+.app-header {
+  width: 98%;
+  padding-top: 80px;
+}
+
+/* Align header content with page content */
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Logo styling */
+.app-logo {
+  font-size: 26px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #111;
+}
+
+/* Page layout */
+.persona-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.persona-page h1 {
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.persona-page > p {
+  font-size: 22px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 55px;
+}
+
+/* 2x2 grid like the design */
+.persona-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+/* Card */
+.persona-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.persona-card:hover {
+  transform: translateY(-2px);
+}
+
+.persona-card.selected {
+  outline: 2px solid #888fc0;
+  background-color: #fafafe;
+}
+
+/* Left content */
+.persona-content {
+  flex: 1;
+}
+
+.persona-title {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.persona-description {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #444;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Tags */
+.persona-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.persona-tag {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: #f4f5fb;
+  color: #637fae;
+  font-weight: 500;
+}
+
+/* Right preview */
+.persona-preview {
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.persona-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Next button */
+.next-button {
+  display: block;
+  margin: 40px auto 0;
+  padding: 12px 36px;
+  font-size: 16px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+}
