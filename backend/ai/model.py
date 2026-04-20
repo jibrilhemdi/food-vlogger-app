@@ -32,6 +32,31 @@ model.eval()
 # -------------------------
 # Inference function
 # -------------------------
+# def run_local_ai(prompt: str) -> str:
+#     inputs = tokenizer(
+#         prompt,
+#         return_tensors="pt"
+#     ).to(DEVICE)
+
+#     with torch.no_grad():
+#         output_ids = model.generate(
+#             **inputs,
+#             temperature = 0.2,
+#             top_p = 0.9,
+#             repetition_penalty = 1.2,
+#             top_k = 20,
+#             max_new_tokens=400,
+#             do_sample=True,
+#             eos_token_id=tokenizer.eos_token_id,
+#         )
+
+#     output_text = tokenizer.decode(
+#         output_ids[0],
+#         skip_special_tokens=True
+#     )
+
+#     return output_text[len(prompt):].strip()
+
 def run_local_ai(prompt: str) -> str:
     inputs = tokenizer(
         prompt,
@@ -45,7 +70,7 @@ def run_local_ai(prompt: str) -> str:
             temperature=0.2,
             top_p=0.9,
             do_sample=True,
-            eos_token_id=tokenizer.eos_token_id
+            eos_token_id=tokenizer.eos_token_id,
         )
 
     output_text = tokenizer.decode(
